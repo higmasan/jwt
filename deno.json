@@ -1,5 +1,5 @@
 {
-  "name": "@higma/hjwt",
+  "name": "@hig/jwt",
   "version": "0.1.0",
   "exports": "./mod.ts",
   "tasks": {
@@ -8,5 +8,10 @@
   "license": "MIT",
   "imports": {
     "@std/assert": "jsr:@std/assert@1"
+  },
+  "publish": {
+    "exclude": [
+      ".vscode"
+    ]
   }
 }
