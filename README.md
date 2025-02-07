@@ -12,14 +12,14 @@ A lightweight JSON Web Token (JWT) library for Deno, supporting HMAC (HS256, HS3
 This module can be imported directly from Deno's ecosystem:
 
 ```typescript
-import { encode, verify } from "https://your-registry-url/jwt.ts";
+import { encode, verify } from "jsr:@hig/jwt";
 ```
 
 ## Usage 🎯👨‍💻🎉
 
 ### Encode a JWT 🔑✍️
 ```typescript
-import { encode } from "https://your-registry-url/jwt.ts";
+import { encode } from "jsr:@hig/jwt";
 
 const payload = {
   userId: "123",
@@ -33,7 +33,7 @@ console.log(token); // eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9...
 
 ### Verify a JWT ✅🔎💥
 ```typescript
-import { verify } from "https://your-registry-url/jwt.ts";
+import { verify } from "jsr:@hig/jwt";
 
 const token = "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9...";
 const secretKey = "your-secret-key";
